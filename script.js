@@ -5,6 +5,24 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
+  // ========== SMOOTH SCROLL (LENIS) ==========
+  const lenis = new Lenis({
+    duration: 1.2,
+    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+    orientation: 'vertical',
+    gestureOrientation: 'vertical',
+    smoothWheel: true,
+    smoothTouch: false,
+    infinite: false,
+  });
+
+  function raf(time) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+  }
+
+  requestAnimationFrame(raf);
+
   // ========== NAVBAR SCROLL EFFECT ==========
   const navbar = document.getElementById('navbar');
 
@@ -320,9 +338,14 @@ document.addEventListener('DOMContentLoaded', () => {
       e.preventDefault();
       const target = document.querySelector(anchor.getAttribute('href'));
       if (target) {
-        const offset = 80; // navbar height
-        const top = target.getBoundingClientRect().top + window.scrollY - offset;
-        window.scrollTo({ top, behavior: 'smooth' });
+        // Use Lenis scroll if defined, otherwise fallback to native smooth scroll
+        if (typeof lenis !== 'undefined') {
+          lenis.scrollTo(target, { offset: -80 });
+        } else {
+          const offset = 80; // navbar height
+          const top = target.getBoundingClientRect().top + window.scrollY - offset;
+          window.scrollTo({ top, behavior: 'smooth' });
+        }
       }
     });
   });

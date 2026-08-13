@@ -95,9 +95,28 @@
 }
 
 html {
-  scroll-behavior: smooth;
   scrollbar-width: thin;
   scrollbar-color: var(--bg-tertiary) var(--bg-primary);
+}
+
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overflow: clip;
+}
+
+.lenis.lenis-prevent {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
 }
 
 body {
@@ -509,7 +528,7 @@ input, textarea {
   display: flex;
   align-items: center;
   overflow: hidden;
-  padding: 100px 0 15px 0;
+  padding: 150px 0 15px 0;
 }
 
 .hero .container {
