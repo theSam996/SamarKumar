@@ -116,7 +116,7 @@
   <section class="section" id="skills">
     <div class="container">
       <div class="skills-section-header reveal">
-        <span class="skills-label-mini">Tech Stack & Tools</span>
+        <p class="section-label">Tech Stack & Tools</p>
         <h2 class="section-title text-center">What I work with</h2>
       </div>
 
@@ -248,255 +248,105 @@
         <h2 class="section-title">Continuous learning & growth</h2>
       </div>
 
-      <p class="cert-intro reveal">
-        I believe in continuous learning and regularly upskill through industry-recognized programs, technical courses, and competitive events. These certifications reflect my growing expertise across programming, data science, machine learning, and business problem-solving.
-      </p>
-
-      <!-- Filter Tabs -->
-      <div class="cert-filters reveal">
-        <button class="cert-filter-btn active" data-filter="all">All</button>
-        <button class="cert-filter-btn" data-filter="programming">Programming</button>
-        <button class="cert-filter-btn" data-filter="data-science">Data Science</button>
-        <button class="cert-filter-btn" data-filter="ai-ml">AI/ML</button>
-        <button class="cert-filter-btn" data-filter="hackathons">Hackathons</button>
-        <button class="cert-filter-btn" data-filter="business">Business</button>
-        <button class="cert-filter-btn" data-filter="web-ai">Web + AI</button>
-      </div>
-
-      <!-- Certifications Grid -->
-      <div class="cert-grid" id="cert-grid">
-
-        <!-- 1. Python Skill Up -->
-        <div class="cert-card reveal" data-category="programming">
-          <div class="cert-card-image">
-            <div class="cert-card-image-placeholder">📜</div>
-            <!-- <img src="assets/cert-python-skillup.jpg" alt="Python Skill Up Certificate"> -->
-          </div>
-          <div class="cert-card-body">
-            <span class="cert-card-category">Programming</span>
-            <h3 class="cert-card-title">Python Skill Up</h3>
-            <div class="cert-card-meta">
-              <span>GeeksforGeeks</span>
-              <span>Dec 2025</span>
-            </div>
-            <div class="cert-card-tags">
-              <span class="cert-tag">Python</span>
-              <span class="cert-tag">Databases</span>
-              <span class="cert-tag">Standard Libraries</span>
-            </div>
-            <a href="https://www.geeksforgeeks.org/certificate/47b6b104c04e60f9dab21a7d75ab1933" class="cert-card-link" target="_blank" rel="noopener noreferrer">
-              View Credential
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-            </a>
-          </div>
-        </div>
-
-        <!-- 2. Data Science Course -->
-        <div class="cert-card reveal" data-category="data-science">
-          <div class="cert-card-image">
-            <div class="cert-card-image-placeholder">📊</div>
-          </div>
-          <div class="cert-card-body">
-            <span class="cert-card-category">Data Science</span>
-            <h3 class="cert-card-title">Data Science Course – Mastering the Fundamentals</h3>
-            <div class="cert-card-meta">
-              <span>Scaler</span>
-              <span>Dec 2025</span>
-            </div>
-            <div class="cert-card-tags">
-              <span class="cert-tag">Data Science</span>
-              <span class="cert-tag">Python for Analysis</span>
-            </div>
-            <a href="https://moonshot.scaler.com/s/sl/AlGc5hCulj" class="cert-card-link" target="_blank" rel="noopener noreferrer">
-              View Credential
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-            </a>
+      <div class="cert-dashboard reveal">
+        <!-- Selectors list (Left) -->
+        <div class="cert-sidebar">
+          <div class="cert-sidebar-list">
+            <button class="cert-select-btn active" data-index="0">
+              <span class="cert-select-num">01</span>
+              <span class="cert-select-name">Python Skill Up</span>
+            </button>
+            <button class="cert-select-btn" data-index="1">
+              <span class="cert-select-num">02</span>
+              <span class="cert-select-name">Data Science Course</span>
+            </button>
+            <button class="cert-select-btn" data-index="2">
+              <span class="cert-select-num">03</span>
+              <span class="cert-select-name">Code Slayer 2K25</span>
+            </button>
+            <button class="cert-select-btn" data-index="3">
+              <span class="cert-select-num">04</span>
+              <span class="cert-select-name">Hype Series Playbook</span>
+            </button>
+            <button class="cert-select-btn" data-index="4">
+              <span class="cert-select-num">05</span>
+              <span class="cert-select-name">ML with MATLAB</span>
+            </button>
+            <button class="cert-select-btn" data-index="5">
+              <span class="cert-select-num">06</span>
+              <span class="cert-select-name">Business Analysis Basics</span>
+            </button>
+            <button class="cert-select-btn" data-index="6">
+              <span class="cert-select-num">07</span>
+              <span class="cert-select-name">Intro to Python</span>
+            </button>
+            <button class="cert-select-btn" data-index="7">
+              <span class="cert-select-num">08</span>
+              <span class="cert-select-name">Angular Meets GenAI</span>
+            </button>
+            <button class="cert-select-btn" data-index="8">
+              <span class="cert-select-num">09</span>
+              <span class="cert-select-name">Kotler's Maniac IIT BHU</span>
+            </button>
+            <button class="cert-select-btn" data-index="9">
+              <span class="cert-select-num">10</span>
+              <span class="cert-select-name">Basics Tutorial on Business</span>
+            </button>
           </div>
         </div>
 
-        <!-- 3. Code Slayer 2K25 -->
-        <div class="cert-card reveal" data-category="hackathons">
-          <div class="cert-card-image">
-            <div class="cert-card-image-placeholder">🏆</div>
-          </div>
-          <div class="cert-card-body">
-            <span class="cert-card-category">Hackathons</span>
-            <h3 class="cert-card-title">Code Slayer 2K25 – NIT Delhi Participation</h3>
-            <div class="cert-card-meta">
-              <span>Unstop</span>
-              <span>Oct 2025</span>
+        <!-- Showcase block (Right) -->
+        <div class="cert-main-showcase">
+          <div class="cert-split-layout">
+            <!-- Left Side: Overlapping Mockups (Visual Stack) -->
+            <div class="cert-visual-col">
+              <div class="cert-stack-container">
+                <!-- Back right card -->
+                <div class="cert-stack-card cert-stack-back-right">
+                  <img id="cert-img-back-right" src="collections/DS_Scalar%20copy.png" alt="Certificate Background">
+                </div>
+                <!-- Back left card -->
+                <div class="cert-stack-card cert-stack-back-left">
+                  <img id="cert-img-back-left" src="collections/NITDelhiHackathon_page-0001%20copy.jpg" alt="Certificate Background">
+                </div>
+                <!-- Main active card -->
+                <div class="cert-stack-card cert-stack-main">
+                  <img id="cert-img-main" src="collections/GFG_Python%20copy.jpg" alt="Active Certificate">
+                </div>
+              </div>
             </div>
-            <div class="cert-card-tags">
-              <span class="cert-tag">Competitive Coding</span>
-              <span class="cert-tag">Problem Solving</span>
+
+            <!-- Right Side: Content Details -->
+            <div class="cert-content-col">
+              <span class="cert-badge-category" id="cert-category">PROGRAMMING</span>
+              <h3 class="cert-showcase-title" id="cert-title">Python Skill Up</h3>
+              
+              <div class="cert-meta-info">
+                <span class="cert-meta-label">Issued by:</span>
+                <span class="cert-meta-value" id="cert-issuer">GeeksforGeeks</span>
+                <span class="cert-meta-dot">•</span>
+                <span class="cert-meta-label">Date:</span>
+                <span class="cert-meta-value" id="cert-date">Dec 2025</span>
+              </div>
+
+              <div class="cert-showcase-tags" id="cert-tags">
+                <span class="cert-showcase-tag">Python</span>
+                <span class="cert-showcase-tag">Databases</span>
+                <span class="cert-showcase-tag">Standard Libraries</span>
+              </div>
+
+              <div class="cert-showcase-actions" id="cert-actions">
+                <a href="https://www.geeksforgeeks.org/certificate/47b6b104c04e60f9dab21a7d75ab1933" id="cert-link" class="cert-action-btn" target="_blank" rel="noopener noreferrer">
+                  <span>View Credential</span>
+                  <svg class="cert-btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </a>
+              </div>
             </div>
-            <a href="https://unstop.com/certificate-preview/a5a176fd-89f2-4fc2-bd0b-015067fb5066" class="cert-card-link" target="_blank" rel="noopener noreferrer">
-              View Credential
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-            </a>
           </div>
         </div>
-
-        <!-- 4. Hype Series -->
-        <div class="cert-card reveal" data-category="hackathons">
-          <div class="cert-card-image">
-            <div class="cert-card-image-placeholder">🚀</div>
-          </div>
-          <div class="cert-card-body">
-            <span class="cert-card-category">Hackathons</span>
-            <h3 class="cert-card-title">Hype Series – The Ultimate Hackathon Playbook</h3>
-            <div class="cert-card-meta">
-              <span>Growbinar</span>
-              <span>Aug 2025</span>
-            </div>
-            <div class="cert-card-tags">
-              <span class="cert-tag">Hackathon Strategy</span>
-              <span class="cert-tag">Innovation</span>
-            </div>
-            <span class="cert-card-link" style="color: var(--text-muted); cursor: default;">
-              No credential URL
-            </span>
-          </div>
-        </div>
-
-        <!-- 5. ML with MATLAB -->
-        <div class="cert-card reveal" data-category="ai-ml">
-          <div class="cert-card-image">
-            <div class="cert-card-image-placeholder">🤖</div>
-          </div>
-          <div class="cert-card-body">
-            <span class="cert-card-category">AI/ML</span>
-            <h3 class="cert-card-title">Machine Learning with MATLAB</h3>
-            <div class="cert-card-meta">
-              <span>MathWorks</span>
-              <span>Sep 2025</span>
-            </div>
-            <div class="cert-card-tags">
-              <span class="cert-tag">Machine Learning</span>
-              <span class="cert-tag">MATLAB</span>
-            </div>
-            <a href="https://matlabacademy.mathworks.com/progress/share/certificate.html?id=aa840531-fd97-4eda-9630-efb9c796a3e2&" class="cert-card-link" target="_blank" rel="noopener noreferrer">
-              View Credential
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-            </a>
-          </div>
-        </div>
-
-        <!-- 6. Business Analysis Basics -->
-        <div class="cert-card reveal" data-category="business">
-          <div class="cert-card-image">
-            <div class="cert-card-image-placeholder">📈</div>
-          </div>
-          <div class="cert-card-body">
-            <span class="cert-card-category">Business</span>
-            <h3 class="cert-card-title">Business Analysis Basics</h3>
-            <div class="cert-card-meta">
-              <span>Simplilearn</span>
-              <span>Dec 2025</span>
-            </div>
-            <div class="cert-card-tags">
-              <span class="cert-tag">Business Strategy</span>
-              <span class="cert-tag">Communication</span>
-            </div>
-            <a href="https://simpli-web.app.link/e/Xh6A32KJiZb" class="cert-card-link" target="_blank" rel="noopener noreferrer">
-              View Credential
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-            </a>
-          </div>
-        </div>
-
-        <!-- 7. Intro to Python -->
-        <div class="cert-card reveal" data-category="programming">
-          <div class="cert-card-image">
-            <div class="cert-card-image-placeholder">🐍</div>
-          </div>
-          <div class="cert-card-body">
-            <span class="cert-card-category">Programming</span>
-            <h3 class="cert-card-title">Introduction to Programming Using Python</h3>
-            <div class="cert-card-meta">
-              <span>Infosys Springboard</span>
-              <span>Oct 2025</span>
-            </div>
-            <div class="cert-card-tags">
-              <span class="cert-tag">Python Programming</span>
-              <span class="cert-tag">Fundamentals</span>
-            </div>
-            <a href="https://verify.onwingspan.com" class="cert-card-link" target="_blank" rel="noopener noreferrer">
-              View Credential
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-            </a>
-          </div>
-        </div>
-
-        <!-- 8. Angular + GenAI -->
-        <div class="cert-card reveal" data-category="web-ai">
-          <div class="cert-card-image">
-            <div class="cert-card-image-placeholder">🔗</div>
-          </div>
-          <div class="cert-card-body">
-            <span class="cert-card-category">Web + AI</span>
-            <h3 class="cert-card-title">Beyond the Browser: Angular Meets Generative AI</h3>
-            <div class="cert-card-meta">
-              <span>D4 Community</span>
-              <span>Jan 2026</span>
-            </div>
-            <div class="cert-card-tags">
-              <span class="cert-tag">Angular</span>
-              <span class="cert-tag">Generative AI</span>
-            </div>
-            <span class="cert-card-link" style="color: var(--text-muted); cursor: default;">
-              No credential URL
-            </span>
-          </div>
-        </div>
-
-        <!-- 9. Kotler's Maniac BASH 8.0 -->
-        <div class="cert-card reveal" data-category="business">
-          <div class="cert-card-image">
-            <div class="cert-card-image-placeholder">🎯</div>
-          </div>
-          <div class="cert-card-body">
-            <span class="cert-card-category">Business Strategy</span>
-            <h3 class="cert-card-title">Kotler's Maniac of B.A.S.H 8.0 – IIT BHU</h3>
-            <div class="cert-card-meta">
-              <span>Unstop</span>
-              <span>Jan 2026</span>
-            </div>
-            <div class="cert-card-tags">
-              <span class="cert-tag">Case Solving</span>
-              <span class="cert-tag">Strategic Thinking</span>
-            </div>
-            <a href="https://unstop.com/certificate-preview/9fbc1099-8402-451d-adb3-3cbe70b539f0" class="cert-card-link" target="_blank" rel="noopener noreferrer">
-              View Credential
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-            </a>
-          </div>
-        </div>
-
-        <!-- 10. Basics Tutorial on Business -->
-        <div class="cert-card reveal" data-category="business">
-          <div class="cert-card-image">
-            <div class="cert-card-image-placeholder">📋</div>
-          </div>
-          <div class="cert-card-body">
-            <span class="cert-card-category">Business</span>
-            <h3 class="cert-card-title">Basics Tutorial on Business</h3>
-            <div class="cert-card-meta">
-              <span>Simplilearn</span>
-              <span>Dec 2025</span>
-            </div>
-            <div class="cert-card-tags">
-              <span class="cert-tag">Business Laws</span>
-              <span class="cert-tag">SWOT</span>
-              <span class="cert-tag">Planning</span>
-            </div>
-            <a href="https://simpli-web.app.link/e/i3MK4QR7iZb" class="cert-card-link" target="_blank" rel="noopener noreferrer">
-              View Credential
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-            </a>
-          </div>
-        </div>
-
       </div>
     </div>
   </section>
@@ -515,121 +365,124 @@
 
       <div class="projects-grid">
 
-        <!-- AquaArch -->
+        <!-- 1. AquaSole -->
         <div class="project-card reveal">
-          <div class="project-card-header">
-            <span class="project-card-icon">📁</span>
-            <div class="project-card-links">
-              <a href="https://github.com/theSam996/Aqua-Arch.git" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository">
-                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-              </a>
-              <a href="https://aquaarch.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Live Demo">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-              </a>
+          <div class="project-card-image-col">
+            <div class="project-card-image-wrapper">
+              <img src="assets/project-aquasole.png" alt="AquaSole Landing Page" onerror="this.style.opacity='0';">
             </div>
           </div>
-          <h3>AquaArch</h3>
-          <p>Responsive website for AquaArch, showcasing a startup concept that combines 3D foot scanning and sustainable insole design, built with Antigravity, Firebase, and deployed via Vercel.</p>
-          <div class="project-card-tech">
-            <span class="tech-tag">Antigravity</span>
-            <span class="tech-tag">HTML</span>
-            <span class="tech-tag">CSS</span>
-            <span class="tech-tag">Firebase</span>
-            <span class="tech-tag">JavaScript</span>
+          <div class="project-card-content-col">
+            <div class="project-card-header-row">
+              <h3 class="project-card-title">AquaSole</h3>
+              <div class="project-card-links">
+                <a href="https://github.com/theSam996/aqua.arch.git" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+                <a href="https://aqua-arch.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Live Demo">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+              </div>
+            </div>
+            <p class="project-card-desc">Responsive website for AquaSole, showcasing a startup concept that combines 3D foot scanning and sustainable insole design, built with Antigravity, Firebase, and Vercel.</p>
+            <div class="project-card-tech">
+              <span class="tech-tag">Antigravity</span>
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">Firebase</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
           </div>
         </div>
 
-        <!-- Login-Signup -->
+        <!-- 2. CommitChain -->
         <div class="project-card reveal reveal-delay-1">
-          <div class="project-card-header">
-            <span class="project-card-icon">📁</span>
-            <div class="project-card-links">
-              <a href="https://github.com/theSam996/Login-Signup.git" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository">
-                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-              </a>
-              <a href="https://login-signup-s7zu.onrender.com/" target="_blank" rel="noopener noreferrer" aria-label="Live Demo">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-              </a>
+          <div class="project-card-image-col">
+            <div class="project-card-image-wrapper">
+              <img src="assets/project-commitchain.png" alt="CommitChain Landing Page" onerror="this.style.opacity='0';">
             </div>
           </div>
-          <h3>Login-Signup Page</h3>
-          <p>A ready-to-deploy boilerplate for adding secure user authentication (Email & Google Sign-In) to any web project using Firebase. A secure user profile page.</p>
-          <div class="project-card-tech">
-            <span class="tech-tag">HTML</span>
-            <span class="tech-tag">TailwindCSS</span>
-            <span class="tech-tag">Firebase Auth</span>
-            <span class="tech-tag">JavaScript</span>
+          <div class="project-card-content-col">
+            <div class="project-card-header-row">
+              <h3 class="project-card-title">CommitChain</h3>
+              <div class="project-card-links">
+                <a href="https://github.com/theSam996/phantasia-blockchain.git" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+                <a href="https://phantasia-blockchain.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Live Demo">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+              </div>
+            </div>
+            <p class="project-card-desc">AI-Powered Decentralized Contribution Tool. Submit verifiable code contributions on-chain with AI analysis and IPFS proof.</p>
+            <div class="project-card-tech">
+              <span class="tech-tag">Polygon</span>
+              <span class="tech-tag">Solidity</span>
+              <span class="tech-tag">IPFS</span>
+              <span class="tech-tag">AI Analysis</span>
+              <span class="tech-tag">React</span>
+            </div>
           </div>
         </div>
 
-        <!-- Rock Paper Scissors -->
+        <!-- 3. CyberShield -->
         <div class="project-card reveal reveal-delay-2">
-          <div class="project-card-header">
-            <span class="project-card-icon">📁</span>
-            <div class="project-card-links">
-              <a href="https://github.com/theSam996/RPS-Game.git" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository">
-                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-              </a>
-              <a href="https://rock-paper-scissor-samar.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Live Demo">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-              </a>
+          <div class="project-card-image-col">
+            <div class="project-card-image-wrapper">
+              <img src="assets/project-cybershield.png" alt="CyberShield Landing Page" onerror="this.style.opacity='0';">
             </div>
           </div>
-          <h3>Rock Paper Scissors Game</h3>
-          <p>A neon-themed, interactive Rock Paper Scissors game built with HTML, Tailwind CSS, and JavaScript. Features include local multiplayer, CPU logic, dynamic animations, and sound effects via Tone.js.</p>
-          <div class="project-card-tech">
-            <span class="tech-tag">HTML5</span>
-            <span class="tech-tag">Tailwind CSS</span>
-            <span class="tech-tag">JavaScript</span>
-            <span class="tech-tag">Tone.js</span>
+          <div class="project-card-content-col">
+            <div class="project-card-header-row">
+              <h3 class="project-card-title">CyberShield</h3>
+              <div class="project-card-links">
+                <a href="https://github.com/theSam996/Hackaccino_4.0.git" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+                <a href="https://hackaccino-4-0-rho.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Live Demo">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+              </div>
+            </div>
+            <p class="project-card-desc">A Physical Anomaly Detection System for Nuclear Safety designed to detect when digital dashboards lie while physical systems fail in real time.</p>
+            <div class="project-card-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">IoT / Hardware</span>
+              <span class="tech-tag">Machine Learning</span>
+              <span class="tech-tag">Real-Time Alerts</span>
+            </div>
           </div>
         </div>
 
-        <!-- Self Talk -->
+        <!-- 4. RPS Game -->
         <div class="project-card reveal reveal-delay-3">
-          <div class="project-card-header">
-            <span class="project-card-icon">📁</span>
-            <div class="project-card-links">
-              <a href="https://github.com/theSam996/SelfTalk.git" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository">
-                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-              </a>
-              <a href="https://selftalk-1.onrender.com/" target="_blank" rel="noopener noreferrer" aria-label="Live Demo">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-              </a>
+          <div class="project-card-image-col">
+            <div class="project-card-image-wrapper">
+              <img src="assets/project-rps.png" alt="RPS Game Landing Page" onerror="this.style.opacity='0';">
             </div>
           </div>
-          <h3>Self Talk</h3>
-          <p>SelfTalk is a Personal Website for Sharing My Own Shayari and Quotes.</p>
-          <div class="project-card-tech">
-            <span class="tech-tag">JavaScript</span>
-            <span class="tech-tag">HTML</span>
-            <span class="tech-tag">CSS</span>
-            <span class="tech-tag">Render</span>
+          <div class="project-card-content-col">
+            <div class="project-card-header-row">
+              <h3 class="project-card-title">RPS Game</h3>
+              <div class="project-card-links">
+                <a href="https://github.com/theSam996/RPS-Game.git" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+                <a href="https://rock-paper-scissor-samar.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Live Demo">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+              </div>
+            </div>
+            <p class="project-card-desc">A neon-themed, interactive Rock Paper Scissors game. Features include local multiplayer, CPU logic, dynamic animations, and sound effects via Tone.js.</p>
+            <div class="project-card-tech">
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">Tailwind CSS</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Tone.js</span>
+            </div>
           </div>
         </div>
 
-        <!-- Gram Seva -->
-        <div class="project-card reveal reveal-delay-4">
-          <div class="project-card-header">
-            <span class="project-card-icon">📁</span>
-            <div class="project-card-links">
-              <a href="https://github.com/theSam996/Gramseva.git" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository">
-                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-              </a>
-              <a href="https://github.com/theSam996/Gramseva.git" target="_blank" rel="noopener noreferrer" aria-label="Live Demo">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-              </a>
-            </div>
-          </div>
-          <h3>Gram Seva</h3>
-          <p>A smart grievance redressal system for villages, enabling citizens to report local issues, track resolutions, and improve transparency using Firebase and web technologies.</p>
-          <div class="project-card-tech">
-            <span class="tech-tag">HTML</span>
-            <span class="tech-tag">JavaScript</span>
-            <span class="tech-tag">CSS</span>
-            <span class="tech-tag">Firebase Auth</span>
-          </div>
-        </div>
 
       </div>
     </div>
@@ -878,40 +731,40 @@
   <!-- ========== BEYOND CODE ========== -->
   <section class="section" id="beyond">
     <div class="container">
-      <div class="section-header reveal">
-        <p class="section-label">Beyond Code</p>
-        <h2 class="section-title">What drives me outside tech</h2>
-      </div>
-
-      <div class="beyond-grid">
-        <div class="beyond-card reveal">
-          <span class="beyond-icon">🏋️</span>
-          <h3>Fitness & Gym</h3>
-          <p>Discipline, consistency, and pushing limits</p>
+      <div class="beyond-split-layout">
+        <!-- Left Side: Content info -->
+        <div class="beyond-info-col reveal">
+          <p class="section-label">Beyond Code</p>
+          <h2 class="section-title">What drives me outside tech</h2>
+          <p class="beyond-description">
+            Outside of coding and entrepreneurship, I actively pursue interests that challenge my physical limits, sharpen my quick-decision skills, and allow me to capture stories through a visual lens. These pursuits bring balance and keep my creativity high.
+          </p>
         </div>
 
-        <div class="beyond-card reveal reveal-delay-1">
-          <span class="beyond-icon">🏸</span>
-          <h3>Badminton Athlete</h3>
-          <p>Focus, agility, and competitive spirit</p>
-        </div>
+        <!-- Right Side: Cascading Cards (Kiff style) -->
+        <div class="beyond-stack-col reveal reveal-delay-1">
+          <div class="beyond-cascade-container">
+            <!-- Card 1: Fitness & Gym -->
+            <div class="beyond-cascade-card beyond-card-gym">
+              <span class="beyond-card-icon">🏋️‍♂️</span>
+              <h3 class="beyond-card-title">Fitness & Gym</h3>
+              <p class="beyond-card-desc">Discipline, consistency, and pushing physical limits</p>
+            </div>
 
-        <div class="beyond-card reveal reveal-delay-2">
-          <span class="beyond-icon">♟️</span>
-          <h3>Chess</h3>
-          <p>Strategic thinking and patience</p>
-        </div>
+            <!-- Card 2: Badminton -->
+            <div class="beyond-cascade-card beyond-card-badminton">
+              <span class="beyond-card-icon">🏸</span>
+              <h3 class="beyond-card-title">Badminton</h3>
+              <p class="beyond-card-desc">Focus, agility, and competitive athletic spirit</p>
+            </div>
 
-        <div class="beyond-card reveal reveal-delay-3">
-          <span class="beyond-icon">🧩</span>
-          <h3>Problem Solving</h3>
-          <p>I genuinely enjoy tackling complex challenges</p>
-        </div>
-
-        <div class="beyond-card reveal reveal-delay-4">
-          <span class="beyond-icon">💭</span>
-          <h3>Brainstorming</h3>
-          <p>I love generating and refining new ideas</p>
+            <!-- Card 3: Photography -->
+            <div class="beyond-cascade-card beyond-card-photography">
+              <span class="beyond-card-icon">📸</span>
+              <h3 class="beyond-card-title">Photography</h3>
+              <p class="beyond-card-desc">Capturing visual perspectives and storytelling</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
