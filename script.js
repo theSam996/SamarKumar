@@ -327,4 +327,73 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // ========== JOURNEY INTERACTIVE DECK ==========
+  const selectorCards = document.querySelectorAll('.selector-card');
+  const detailCards = document.querySelectorAll('.deck-detail-card');
+  const deckOverlay = document.getElementById('deck-overlay');
+  const deckCloseBtn = document.getElementById('deck-close-btn');
+
+  if (selectorCards.length && detailCards.length && deckOverlay) {
+    // Open card detail modal
+    selectorCards.forEach((card) => {
+      card.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const index = card.getAttribute('data-index');
+
+        // Reset active status
+        selectorCards.forEach(c => c.classList.remove('active'));
+        detailCards.forEach(d => d.classList.remove('active'));
+
+        // Set active statuses
+        card.classList.add('active');
+        const targetDetail = document.querySelector(`.deck-detail-card[data-card-index="${index}"]`);
+        if (targetDetail) {
+          targetDetail.classList.add('active');
+        }
+
+        // Show overlay modal
+        deckOverlay.classList.add('active');
+        document.body.style.overflow = 'hidden'; // Lock background scrolling
+      });
+    });
+
+    // Close function
+    const closeDeckModal = () => {
+      deckOverlay.classList.remove('active');
+      selectorCards.forEach(c => c.classList.remove('active'));
+      detailCards.forEach(d => d.classList.remove('active'));
+      document.body.style.overflow = ''; // Unlock scrolling
+    };
+
+    // Close on click close button
+    if (deckCloseBtn) {
+      deckCloseBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        closeDeckModal();
+      });
+    }
+
+    // Close on click overlay backdrop background
+    deckOverlay.addEventListener('click', (e) => {
+      // Close only if click is outside the card details contents
+      if (e.target === deckOverlay) {
+        closeDeckModal();
+      }
+    });
+
+    // Prevent closing when clicking inside detail card contents
+    detailCards.forEach((detailCard) => {
+      detailCard.addEventListener('click', (e) => {
+        e.stopPropagation();
+      });
+    });
+
+    // Close on pressing Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && deckOverlay.classList.contains('active')) {
+        closeDeckModal();
+      }
+    });
+  }
+
 });

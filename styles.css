@@ -1257,183 +1257,350 @@ input, textarea {
 
 
 /* ==========================================================================
-   JOURNEY SECTION (TIMELINE)
+   JOURNEY & EXPERIENCE SECTION (INTERACTIVE CARD DECK)
    ========================================================================== */
 
-.timeline {
+.deck-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
   position: relative;
-  padding-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  perspective: 1500px;
 }
 
-.timeline::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: 1px;
-  background: linear-gradient(to bottom, var(--accent), var(--border), transparent);
-}
-
-.timeline-item {
+/* Fanned selector cards deck (Image 3 style) */
+.deck-selector-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  margin: 0 auto;
   position: relative;
-  padding-bottom: var(--space-3xl);
+  min-height: 300px;
 }
 
-.timeline-item:last-child {
-  padding-bottom: 0;
+.selector-card {
+  width: 200px;
+  height: 280px;
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: var(--space-lg);
+  margin: 0 -35px; /* Overlap margin */
+  position: relative;
+  transform-origin: bottom center;
+  transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  text-align: left;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
 }
 
-.timeline-dot {
-  position: absolute;
-  left: -2rem;
-  top: 4px;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: var(--accent);
-  border: 2px solid var(--bg-primary);
-  transform: translateX(-50%);
-  z-index: 1;
+/* Overlapping Z-index & fanning positions */
+.selector-card:nth-child(1) { transform: rotate(-12deg) translateY(24px) translateX(10px); z-index: 1; }
+.selector-card:nth-child(2) { transform: rotate(-6deg) translateY(8px) translateX(5px); z-index: 2; }
+.selector-card:nth-child(3) { transform: rotate(0deg) translateY(0px); z-index: 3; }
+.selector-card:nth-child(4) { transform: rotate(6deg) translateY(8px) translateX(-5px); z-index: 2; }
+.selector-card:nth-child(5) { transform: rotate(12deg) translateY(24px) translateX(-10px); z-index: 1; }
+
+/* Selector card pattern preview */
+.selector-card .deck-card-pattern {
+  width: 100%;
+  height: 100px;
+  opacity: 0.85;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: var(--space-md);
 }
 
-.timeline-item:not(:first-child) .timeline-dot {
-  background: var(--bg-tertiary);
-  border-color: var(--border);
+.selector-card-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
 }
 
-.timeline-label {
-  font-size: var(--font-size-xs);
-  font-weight: 600;
-  color: var(--accent);
+.selector-card-label {
+  font-size: 9px;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
+  opacity: 0.7;
+  margin-bottom: 4px;
+}
+
+.selector-card-title {
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+}
+
+/* Hover effects */
+.selector-card:hover {
+  transform: translateY(-40px) rotate(0deg) scale(1.15) !important;
+  z-index: 20 !important;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.75);
+}
+
+/* Premium Dark Color Palette for Selector and Detail Cards */
+/* Card 1: B.Tech CSE (Deep Slate/Indigo) */
+.selector-card[data-index="0"], .deck-detail-card[data-card-index="0"] {
+  background-color: #111019;
+  border: 1px solid rgba(99, 102, 241, 0.25);
+  color: #ffffff;
+}
+.selector-card[data-index="0"] .selector-card-label, .deck-detail-card[data-card-index="0"] .deck-card-label {
+  color: #818cf8;
+}
+
+/* Card 2: ARC Esports (Deep Charcoal/Amber) */
+.selector-card[data-index="1"], .deck-detail-card[data-card-index="1"] {
+  background-color: #171310;
+  border: 1px solid rgba(245, 158, 11, 0.25);
+  color: #ffffff;
+}
+.selector-card[data-index="1"] .selector-card-label, .deck-detail-card[data-card-index="1"] .deck-card-label {
+  color: #fbbf24;
+}
+
+/* Card 3: Sami Cleaner (Deep Slate/Cyan) */
+.selector-card[data-index="2"], .deck-detail-card[data-card-index="2"] {
+  background-color: #0c131d;
+  border: 1px solid rgba(14, 165, 233, 0.25);
+  color: #ffffff;
+}
+.selector-card[data-index="2"] .selector-card-label, .deck-detail-card[data-card-index="2"] .deck-card-label {
+  color: #38bdf8;
+}
+
+/* Card 4: GDG On Campus (Deep Emerald/Mint) */
+.selector-card[data-index="3"], .deck-detail-card[data-card-index="3"] {
+  background-color: #0e1914;
+  border: 1px solid rgba(34, 197, 94, 0.25);
+  color: #ffffff;
+}
+.selector-card[data-index="3"] .selector-card-label, .deck-detail-card[data-card-index="3"] .deck-card-label {
+  color: #4ade80;
+}
+
+/* Card 5: Hackathon (Deep Ruby/Crimson) */
+.selector-card[data-index="4"], .deck-detail-card[data-card-index="4"] {
+  background-color: #151212;
+  border: 1px solid rgba(239, 68, 68, 0.25);
+  color: #ffffff;
+}
+.selector-card[data-index="4"] .selector-card-label, .deck-detail-card[data-card-index="4"] .deck-card-label {
+  color: #f87171;
+}
+
+/* Modal Overlay (Image 4 popup style) */
+.deck-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(10, 10, 12, 0.85); /* Premium dark backdrop overlay */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+.deck-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Close button for overlay modal */
+.deck-close-btn {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 1010;
+}
+
+.deck-close-btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: rotate(90deg);
+}
+
+.deck-close-btn svg {
+  width: 20px;
+  height: 20px;
+}
+
+.deck-modal-content {
+  width: 100%;
+  max-width: 480px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--space-md);
+}
+
+/* Detail Card shown inside Modal overlay (Image 4 Style) */
+.deck-detail-card {
+  width: 100%;
+  min-height: 520px;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.85);
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transform: scale(0.85) translateY(40px) rotateX(-15deg);
+  transition: opacity 0.5s cubic-bezier(0.165, 0.84, 0.44, 1),
+              transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.15);
+  display: none;
+}
+
+.deck-detail-card.active {
+  display: flex;
+  opacity: 1;
+  transform: scale(1) translateY(0) rotateX(0deg);
+}
+
+.deck-detail-card .deck-card-pattern {
+  width: 100%;
+  height: 140px;
+  background: rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.deck-detail-card .deck-card-pattern svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Detail card content body */
+.deck-card-body {
+  padding: var(--space-xl);
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.deck-card-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-xs);
+}
+
+.deck-card-label {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.deck-card-period {
+  font-size: var(--font-size-xs);
+  opacity: 0.7;
+  font-weight: 500;
+}
+
+.deck-card-title {
+  font-size: var(--font-size-lg);
+  font-weight: 700;
+  margin-bottom: var(--space-xs);
+  line-height: var(--line-height-tight);
+}
+
+.deck-card-org {
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  opacity: 0.8;
   margin-bottom: var(--space-sm);
 }
 
-.timeline-title {
-  font-size: var(--font-size-lg);
-  font-weight: 600;
-  color: var(--text-primary);
-  margin-bottom: var(--space-xs);
-}
-
-.timeline-subtitle {
+.deck-card-desc {
   font-size: var(--font-size-sm);
-  color: var(--text-muted);
-  margin-bottom: var(--space-md);
-}
-
-.timeline-description {
-  font-size: var(--font-size-sm);
-  color: var(--text-secondary);
   line-height: var(--line-height-relaxed);
-  max-width: 560px;
+  opacity: 0.85;
   margin-bottom: var(--space-md);
 }
 
-.timeline-skills {
+.deck-card-skills {
   display: flex;
   flex-wrap: wrap;
   gap: var(--space-xs);
+  margin-top: auto;
 }
 
-.timeline-skill-tag {
-  padding: 2px 10px;
-  font-size: var(--font-size-xs);
-  color: var(--text-muted);
-  background: var(--bg-secondary);
-  border-radius: 4px;
-  border: 1px solid var(--border);
-}
-
-
-/* ==========================================================================
-   STARTUPS & ORGANIZATIONS SECTION
-   ========================================================================== */
-
-.startups-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: var(--space-lg);
-}
-
-.startup-card {
-  background: var(--card-bg);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-lg);
-  padding: var(--space-2xl);
-  transition: border-color var(--transition-base), transform var(--transition-base);
-}
-
-.startup-card:hover {
-  border-color: var(--bg-tertiary);
-  transform: translateY(-3px);
-}
-
-.startup-card-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: var(--space-lg);
-}
-
-.startup-role {
-  display: inline-flex;
-  align-items: center;
-  padding: var(--space-xs) var(--space-md);
-  font-size: var(--font-size-xs);
+.deck-skill-tag {
+  padding: 4px 10px;
+  font-size: 11px;
   font-weight: 600;
-  border-radius: 20px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  color: inherit;
 }
 
-.startup-role.founder {
-  color: var(--accent);
-  background: var(--accent-soft);
-  border: 1px solid rgba(232, 69, 60, 0.15);
+/* Mobile responsive fixes */
+@media (max-width: 768px) {
+  .deck-selector-row {
+    min-height: auto;
+    flex-wrap: wrap;
+    gap: var(--space-md);
+    padding: var(--space-md) 0;
+  }
+  
+  .selector-card {
+    width: calc(50% - 10px);
+    height: 220px;
+    margin: 0 !important;
+    transform: none !important;
+  }
+  
+  .selector-card:nth-child(5) {
+    width: 100%;
+    height: 180px;
+  }
+
+  .selector-card:hover {
+    transform: translateY(-8px) scale(1.02) !important;
+  }
+  
+  .deck-close-btn {
+    top: 20px;
+    right: 20px;
+  }
 }
 
-.startup-role.member {
-  color: var(--text-secondary);
-  background: var(--bg-tertiary);
-  border: 1px solid var(--border);
-}
-
-.startup-role.volunteer {
-  color: #a78bfa;
-  background: rgba(167, 139, 250, 0.1);
-  border: 1px solid rgba(167, 139, 250, 0.15);
-}
-
-.startup-period {
-  font-size: var(--font-size-xs);
-  color: var(--text-muted);
-}
-
-.startup-card h3 {
-  font-size: var(--font-size-lg);
-  font-weight: 600;
-  color: var(--text-primary);
-  margin-bottom: var(--space-xs);
-}
-
-.startup-card .startup-org {
-  font-size: var(--font-size-sm);
-  color: var(--text-muted);
-  margin-bottom: var(--space-md);
-}
-
-.startup-card p {
-  font-size: var(--font-size-sm);
-  color: var(--text-secondary);
-  line-height: var(--line-height-relaxed);
-  margin-bottom: var(--space-lg);
-}
-
-.startup-skills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-xs);
+@media (max-width: 480px) {
+  .selector-card {
+    width: 100%;
+    height: 180px;
+  }
 }
 
 
