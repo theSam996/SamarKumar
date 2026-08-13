@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Samar Kumar — Computer Science Engineering Student. Explore my work, skills, and experience as a software engineer dedicated to building reliable digital solutions.">
+  <meta name="keywords" content="Samar Kumar, Portfolio, Software Engineer, CS Engineering, Web Development, Generative AI, Startups">
+  <meta name="author" content="Samar Kumar">
+  <title>Samar Kumar — Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Favicon placeholder -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>S</text></svg>">
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#hero" class="nav-logo">
+        <svg class="logo-icon" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+          <rect x="2" y="5" width="6" height="3" rx="1.5"/>
+          <rect x="2" y="10.5" width="20" height="3" rx="1.5"/>
+          <rect x="2" y="16" width="13" height="3" rx="1.5"/>
+        </svg>
+        s.kumar
+      </a>
+
+      <div class="nav-links-wrapper">
+        <div class="nav-links">
+          <a href="#about" class="nav-link">About</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#certifications" class="nav-link">Certifications</a>
+          <a href="#journey" class="nav-link">Journey</a>
+        </div>
+
+        <div class="nav-right">
+          <button class="nav-search-btn" aria-label="Search" id="nav-search-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </button>
+          <a href="https://github.com/theSam996" target="_blank" rel="noopener noreferrer" class="nav-secondary-link">GitHub</a>
+          <a href="#contact" class="nav-cta">Get in Touch</a>
+        </div>
+      </div>
+
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="nav-mobile" id="nav-mobile">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#journey">Journey</a>
+      <a href="#startups">Startups</a>
+      <a href="#beyond">Beyond Code</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+
+  <!-- ========== HERO SECTION ========== -->
+  <section class="hero section" id="hero">
+    <div class="container">
+      <div class="hero-section-title reveal">Welcome to my profile</div>
+      
+      <div class="hero-content">
+        <div class="hero-photo reveal">
+          <div class="hero-photo-wrapper">
+            <!-- Circular container with accent background like the yellow headshot background -->
+            <div class="hero-photo-placeholder">SK</div>
+            <!-- <img src="assets/profile-mirror-selfie.jpg" alt="Samar Kumar"> -->
+          </div>
+        </div>
+
+        <div class="hero-text reveal reveal-delay-1">
+          <h2 class="hero-author-name">Samar Kumar</h2>
+          <div class="hero-author-bio">
+            <p>
+              Hey! My name is <strong>Samar Kumar</strong> and I'm a Computer Science Engineering student with a strong focus on entrepreneurship, Generative AI, and building startups from scratch. I love solving real-world problems through code, product thinking, and rapid experimentation.
+            </p>
+            <p>
+              Explore my work, skills, and experience as a software engineer dedicated to building reliable digital solutions. I'm always open to collaboration and conversations about tech, startups, and the future of AI.
+            </p>
+          </div>
+          
+          <div class="hero-author-links">
+            <a href="#projects" class="hero-inline-link">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+              </svg>
+              Explore my projects & work
+            </a>
+            <a href="#contact" class="hero-inline-link">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+              </svg>
+              Get in touch / send message
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="section-divider"></div>
+
+
+  <!-- ========== ABOUT SECTION ========== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">About</p>
+        <h2 class="section-title">Get to know me</h2>
+      </div>
+
+      <div class="about-content">
+        <div class="about-image-wrapper reveal">
+          <!-- Replace with actual photo -->
+          <div class="about-image-placeholder">Photo</div>
+          <!-- <img src="assets/profile-mirror-selfie.jpg" alt="Samar Kumar"> -->
+        </div>
+
+        <div class="about-text reveal reveal-delay-1">
+          <h3>Samar Kumar</h3>
+          <p>
+            A Computer Science Engineering student with a strong focus on entrepreneurship, Generative AI, and building startups from scratch. I love solving real-world problems through code, product thinking, and rapid experimentation.
+          </p>
+          <p>
+            I work on web projects, explore AI-powered tools, and continuously improve my DSA skills to become a stronger problem solver. Hackathons are a big part of my journey — they push me to think fast, build under pressure, and turn ideas into real products.
+          </p>
+          <p>
+            I'm deeply interested in how Generative AI can accelerate startups. Currently exploring startup ideas, GenAI applications, research-driven projects, and internship opportunities. Always open to collaboration and conversations about tech, startups, and the future of AI.
+          </p>
+
+          <div class="about-descriptors">
+            <span class="descriptor-tag">CS Engineering Student</span>
+            <span class="descriptor-tag">Continuous Learner</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="section-divider"></div>
+
+
+  <!-- ========== SKILLS SECTION ========== -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">Technical Skills</p>
+        <h2 class="section-title">What I work with</h2>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Programming Languages -->
+        <div class="skill-card reveal">
+          <div class="skill-card-icon">⌨️</div>
+          <h3>Programming Languages</h3>
+          <div class="skill-list">
+            <span class="skill-tag">C++</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">JavaScript</span>
+          </div>
+        </div>
+
+        <!-- Web Development -->
+        <div class="skill-card reveal reveal-delay-1">
+          <div class="skill-card-icon">🌐</div>
+          <h3>Web Development</h3>
+          <div class="skill-list">
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Node.js</span>
+          </div>
+        </div>
+
+        <!-- Tools & Platforms -->
+        <div class="skill-card reveal reveal-delay-2">
+          <div class="skill-card-icon">🛠️</div>
+          <h3>Tools & Platforms</h3>
+          <div class="skill-list">
+            <span class="skill-tag">Git & GitHub</span>
+            <span class="skill-tag">Supabase</span>
+            <span class="skill-tag">Firebase</span>
+            <span class="skill-tag">VS Code</span>
+          </div>
+        </div>
+
+        <!-- Business & Innovation -->
+        <div class="skill-card reveal reveal-delay-3">
+          <div class="skill-card-icon">💡</div>
+          <h3>Business & Innovation</h3>
+          <div class="skill-list">
+            <span class="skill-tag">Founder's Mindset</span>
+            <span class="skill-tag">Business Strategy</span>
+            <span class="skill-tag">Strategic Planning</span>
+            <span class="skill-tag">Startup Ideation</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="section-divider"></div>
+
+
+  <!-- ========== CERTIFICATIONS SECTION ========== -->
+  <section class="section" id="certifications">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">Certifications</p>
+        <h2 class="section-title">Continuous learning & growth</h2>
+      </div>
+
+      <p class="cert-intro reveal">
+        I believe in continuous learning and regularly upskill through industry-recognized programs, technical courses, and competitive events. These certifications reflect my growing expertise across programming, data science, machine learning, and business problem-solving.
+      </p>
+
+      <!-- Filter Tabs -->
+      <div class="cert-filters reveal">
+        <button class="cert-filter-btn active" data-filter="all">All</button>
+        <button class="cert-filter-btn" data-filter="programming">Programming</button>
+        <button class="cert-filter-btn" data-filter="data-science">Data Science</button>
+        <button class="cert-filter-btn" data-filter="ai-ml">AI/ML</button>
+        <button class="cert-filter-btn" data-filter="hackathons">Hackathons</button>
+        <button class="cert-filter-btn" data-filter="business">Business</button>
+        <button class="cert-filter-btn" data-filter="web-ai">Web + AI</button>
+      </div>
+
+      <!-- Certifications Grid -->
+      <div class="cert-grid" id="cert-grid">
+
+        <!-- 1. Python Skill Up -->
+        <div class="cert-card reveal" data-category="programming">
+          <div class="cert-card-image">
+            <div class="cert-card-image-placeholder">📜</div>
+            <!-- <img src="assets/cert-python-skillup.jpg" alt="Python Skill Up Certificate"> -->
+          </div>
+          <div class="cert-card-body">
+            <span class="cert-card-category">Programming</span>
+            <h3 class="cert-card-title">Python Skill Up</h3>
+            <div class="cert-card-meta">
+              <span>GeeksforGeeks</span>
+              <span>Dec 2025</span>
+            </div>
+            <div class="cert-card-tags">
+              <span class="cert-tag">Python</span>
+              <span class="cert-tag">Databases</span>
+              <span class="cert-tag">Standard Libraries</span>
+            </div>
+            <a href="https://www.geeksforgeeks.org/certificate/47b6b104c04e60f9dab21a7d75ab1933" class="cert-card-link" target="_blank" rel="noopener noreferrer">
+              View Credential
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- 2. Data Science Course -->
+        <div class="cert-card reveal" data-category="data-science">
+          <div class="cert-card-image">
+            <div class="cert-card-image-placeholder">📊</div>
+          </div>
+          <div class="cert-card-body">
+            <span class="cert-card-category">Data Science</span>
+            <h3 class="cert-card-title">Data Science Course – Mastering the Fundamentals</h3>
+            <div class="cert-card-meta">
+              <span>Scaler</span>
+              <span>Dec 2025</span>
+            </div>
+            <div class="cert-card-tags">
+              <span class="cert-tag">Data Science</span>
+              <span class="cert-tag">Python for Analysis</span>
+            </div>
+            <a href="https://moonshot.scaler.com/s/sl/AlGc5hCulj" class="cert-card-link" target="_blank" rel="noopener noreferrer">
+              View Credential
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- 3. Code Slayer 2K25 -->
+        <div class="cert-card reveal" data-category="hackathons">
+          <div class="cert-card-image">
+            <div class="cert-card-image-placeholder">🏆</div>
+          </div>
+          <div class="cert-card-body">
+            <span class="cert-card-category">Hackathons</span>
+            <h3 class="cert-card-title">Code Slayer 2K25 – NIT Delhi Participation</h3>
+            <div class="cert-card-meta">
+              <span>Unstop</span>
+              <span>Oct 2025</span>
+            </div>
+            <div class="cert-card-tags">
+              <span class="cert-tag">Competitive Coding</span>
+              <span class="cert-tag">Problem Solving</span>
+            </div>
+            <a href="https://unstop.com/certificate-preview/a5a176fd-89f2-4fc2-bd0b-015067fb5066" class="cert-card-link" target="_blank" rel="noopener noreferrer">
+              View Credential
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- 4. Hype Series -->
+        <div class="cert-card reveal" data-category="hackathons">
+          <div class="cert-card-image">
+            <div class="cert-card-image-placeholder">🚀</div>
+          </div>
+          <div class="cert-card-body">
+            <span class="cert-card-category">Hackathons</span>
+            <h3 class="cert-card-title">Hype Series – The Ultimate Hackathon Playbook</h3>
+            <div class="cert-card-meta">
+              <span>Growbinar</span>
+              <span>Aug 2025</span>
+            </div>
+            <div class="cert-card-tags">
+              <span class="cert-tag">Hackathon Strategy</span>
+              <span class="cert-tag">Innovation</span>
+            </div>
+            <span class="cert-card-link" style="color: var(--text-muted); cursor: default;">
+              No credential URL
+            </span>
+          </div>
+        </div>
+
+        <!-- 5. ML with MATLAB -->
+        <div class="cert-card reveal" data-category="ai-ml">
+          <div class="cert-card-image">
+            <div class="cert-card-image-placeholder">🤖</div>
+          </div>
+          <div class="cert-card-body">
+            <span class="cert-card-category">AI/ML</span>
+            <h3 class="cert-card-title">Machine Learning with MATLAB</h3>
+            <div class="cert-card-meta">
+              <span>MathWorks</span>
+              <span>Sep 2025</span>
+            </div>
+            <div class="cert-card-tags">
+              <span class="cert-tag">Machine Learning</span>
+              <span class="cert-tag">MATLAB</span>
+            </div>
+            <a href="https://matlabacademy.mathworks.com/progress/share/certificate.html?id=aa840531-fd97-4eda-9630-efb9c796a3e2&" class="cert-card-link" target="_blank" rel="noopener noreferrer">
+              View Credential
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- 6. Business Analysis Basics -->
+        <div class="cert-card reveal" data-category="business">
+          <div class="cert-card-image">
+            <div class="cert-card-image-placeholder">📈</div>
+          </div>
+          <div class="cert-card-body">
+            <span class="cert-card-category">Business</span>
+            <h3 class="cert-card-title">Business Analysis Basics</h3>
+            <div class="cert-card-meta">
+              <span>Simplilearn</span>
+              <span>Dec 2025</span>
+            </div>
+            <div class="cert-card-tags">
+              <span class="cert-tag">Business Strategy</span>
+              <span class="cert-tag">Communication</span>
+            </div>
+            <a href="https://simpli-web.app.link/e/Xh6A32KJiZb" class="cert-card-link" target="_blank" rel="noopener noreferrer">
+              View Credential
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- 7. Intro to Python -->
+        <div class="cert-card reveal" data-category="programming">
+          <div class="cert-card-image">
+            <div class="cert-card-image-placeholder">🐍</div>
+          </div>
+          <div class="cert-card-body">
+            <span class="cert-card-category">Programming</span>
+            <h3 class="cert-card-title">Introduction to Programming Using Python</h3>
+            <div class="cert-card-meta">
+              <span>Infosys Springboard</span>
+              <span>Oct 2025</span>
+            </div>
+            <div class="cert-card-tags">
+              <span class="cert-tag">Python Programming</span>
+              <span class="cert-tag">Fundamentals</span>
+            </div>
+            <a href="https://verify.onwingspan.com" class="cert-card-link" target="_blank" rel="noopener noreferrer">
+              View Credential
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- 8. Angular + GenAI -->
+        <div class="cert-card reveal" data-category="web-ai">
+          <div class="cert-card-image">
+            <div class="cert-card-image-placeholder">🔗</div>
+          </div>
+          <div class="cert-card-body">
+            <span class="cert-card-category">Web + AI</span>
+            <h3 class="cert-card-title">Beyond the Browser: Angular Meets Generative AI</h3>
+            <div class="cert-card-meta">
+              <span>D4 Community</span>
+              <span>Jan 2026</span>
+            </div>
+            <div class="cert-card-tags">
+              <span class="cert-tag">Angular</span>
+              <span class="cert-tag">Generative AI</span>
+            </div>
+            <span class="cert-card-link" style="color: var(--text-muted); cursor: default;">
+              No credential URL
+            </span>
+          </div>
+        </div>
+
+        <!-- 9. Kotler's Maniac BASH 8.0 -->
+        <div class="cert-card reveal" data-category="business">
+          <div class="cert-card-image">
+            <div class="cert-card-image-placeholder">🎯</div>
+          </div>
+          <div class="cert-card-body">
+            <span class="cert-card-category">Business Strategy</span>
+            <h3 class="cert-card-title">Kotler's Maniac of B.A.S.H 8.0 – IIT BHU</h3>
+            <div class="cert-card-meta">
+              <span>Unstop</span>
+              <span>Jan 2026</span>
+            </div>
+            <div class="cert-card-tags">
+              <span class="cert-tag">Case Solving</span>
+              <span class="cert-tag">Strategic Thinking</span>
+            </div>
+            <a href="https://unstop.com/certificate-preview/9fbc1099-8402-451d-adb3-3cbe70b539f0" class="cert-card-link" target="_blank" rel="noopener noreferrer">
+              View Credential
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- 10. Basics Tutorial on Business -->
+        <div class="cert-card reveal" data-category="business">
+          <div class="cert-card-image">
+            <div class="cert-card-image-placeholder">📋</div>
+          </div>
+          <div class="cert-card-body">
+            <span class="cert-card-category">Business</span>
+            <h3 class="cert-card-title">Basics Tutorial on Business</h3>
+            <div class="cert-card-meta">
+              <span>Simplilearn</span>
+              <span>Dec 2025</span>
+            </div>
+            <div class="cert-card-tags">
+              <span class="cert-tag">Business Laws</span>
+              <span class="cert-tag">SWOT</span>
+              <span class="cert-tag">Planning</span>
+            </div>
+            <a href="https://simpli-web.app.link/e/i3MK4QR7iZb" class="cert-card-link" target="_blank" rel="noopener noreferrer">
+              View Credential
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <div class="section-divider"></div>
+
+
+  <!-- ========== PROJECTS SECTION ========== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">Projects</p>
+        <h2 class="section-title">Things I've built</h2>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- AquaArch -->
+        <div class="project-card reveal">
+          <div class="project-card-header">
+            <span class="project-card-icon">📁</span>
+            <div class="project-card-links">
+              <a href="https://github.com/theSam996/Aqua-Arch.git" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+              <a href="https://aquaarch.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Live Demo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3>AquaArch</h3>
+          <p>Responsive website for AquaArch, showcasing a startup concept that combines 3D foot scanning and sustainable insole design, built with Antigravity, Firebase, and deployed via Vercel.</p>
+          <div class="project-card-tech">
+            <span class="tech-tag">Antigravity</span>
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
+            <span class="tech-tag">Firebase</span>
+            <span class="tech-tag">JavaScript</span>
+          </div>
+        </div>
+
+        <!-- Login-Signup -->
+        <div class="project-card reveal reveal-delay-1">
+          <div class="project-card-header">
+            <span class="project-card-icon">📁</span>
+            <div class="project-card-links">
+              <a href="https://github.com/theSam996/Login-Signup.git" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+              <a href="https://login-signup-s7zu.onrender.com/" target="_blank" rel="noopener noreferrer" aria-label="Live Demo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3>Login-Signup Page</h3>
+          <p>A ready-to-deploy boilerplate for adding secure user authentication (Email & Google Sign-In) to any web project using Firebase. A secure user profile page.</p>
+          <div class="project-card-tech">
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">TailwindCSS</span>
+            <span class="tech-tag">Firebase Auth</span>
+            <span class="tech-tag">JavaScript</span>
+          </div>
+        </div>
+
+        <!-- Rock Paper Scissors -->
+        <div class="project-card reveal reveal-delay-2">
+          <div class="project-card-header">
+            <span class="project-card-icon">📁</span>
+            <div class="project-card-links">
+              <a href="https://github.com/theSam996/RPS-Game.git" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+              <a href="https://rock-paper-scissor-samar.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Live Demo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3>Rock Paper Scissors Game</h3>
+          <p>A neon-themed, interactive Rock Paper Scissors game built with HTML, Tailwind CSS, and JavaScript. Features include local multiplayer, CPU logic, dynamic animations, and sound effects via Tone.js.</p>
+          <div class="project-card-tech">
+            <span class="tech-tag">HTML5</span>
+            <span class="tech-tag">Tailwind CSS</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">Tone.js</span>
+          </div>
+        </div>
+
+        <!-- Self Talk -->
+        <div class="project-card reveal reveal-delay-3">
+          <div class="project-card-header">
+            <span class="project-card-icon">📁</span>
+            <div class="project-card-links">
+              <a href="https://github.com/theSam996/SelfTalk.git" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+              <a href="https://selftalk-1.onrender.com/" target="_blank" rel="noopener noreferrer" aria-label="Live Demo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3>Self Talk</h3>
+          <p>SelfTalk is a Personal Website for Sharing My Own Shayari and Quotes.</p>
+          <div class="project-card-tech">
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
+            <span class="tech-tag">Render</span>
+          </div>
+        </div>
+
+        <!-- Gram Seva -->
+        <div class="project-card reveal reveal-delay-4">
+          <div class="project-card-header">
+            <span class="project-card-icon">📁</span>
+            <div class="project-card-links">
+              <a href="https://github.com/theSam996/Gramseva.git" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+              <a href="https://github.com/theSam996/Gramseva.git" target="_blank" rel="noopener noreferrer" aria-label="Live Demo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3>Gram Seva</h3>
+          <p>A smart grievance redressal system for villages, enabling citizens to report local issues, track resolutions, and improve transparency using Firebase and web technologies.</p>
+          <div class="project-card-tech">
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">CSS</span>
+            <span class="tech-tag">Firebase Auth</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <div class="section-divider"></div>
+
+
+  <!-- ========== JOURNEY SECTION ========== -->
+  <section class="section" id="journey">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">Journey</p>
+        <h2 class="section-title">My path so far</h2>
+      </div>
+
+      <div class="timeline">
+
+        <!-- Academic & Learning -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <span class="timeline-label">Academic & Learning</span>
+          <h3 class="timeline-title">B.Tech in Computer Science Engineering</h3>
+          <p class="timeline-subtitle">Bennett University, India</p>
+          <p class="timeline-description">
+            Building strong foundations in programming and data structures while actively practicing DSA and competitive coding. Developing full-stack, real-world projects alongside academics.
+          </p>
+          <div class="timeline-skills">
+            <span class="timeline-skill-tag">C++</span>
+            <span class="timeline-skill-tag">Java</span>
+            <span class="timeline-skill-tag">JavaScript</span>
+            <span class="timeline-skill-tag">Python</span>
+            <span class="timeline-skill-tag">Data Structures</span>
+            <span class="timeline-skill-tag">Algorithms</span>
+          </div>
+        </div>
+
+        <!-- Practical Learning -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <span class="timeline-label">Practical Learning</span>
+          <h3 class="timeline-title">Full-Stack Development Journey</h3>
+          <p class="timeline-subtitle">Self-Learning & Projects · Remote</p>
+          <p class="timeline-description">
+            Building web applications focused on usability and clean design. Exploring frontend, backend basics, and database integration to turn ideas into functional products.
+          </p>
+          <div class="timeline-skills">
+            <span class="timeline-skill-tag">HTML</span>
+            <span class="timeline-skill-tag">CSS</span>
+            <span class="timeline-skill-tag">JavaScript</span>
+            <span class="timeline-skill-tag">React</span>
+            <span class="timeline-skill-tag">Firebase</span>
+            <span class="timeline-skill-tag">Supabase</span>
+          </div>
+        </div>
+
+        <!-- Skill Development -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <span class="timeline-label">Skill Development</span>
+          <h3 class="timeline-title">Competitive Programming & DSA Practice</h3>
+          <p class="timeline-subtitle">LeetCode & Practice Platforms · Online</p>
+          <p class="timeline-description">
+            Regularly solving algorithmic problems to strengthen logic, efficiency, and optimization. Preparing for technical interviews and coding competitions.
+          </p>
+          <div class="timeline-skills">
+            <span class="timeline-skill-tag">C++</span>
+            <span class="timeline-skill-tag">Algorithms</span>
+            <span class="timeline-skill-tag">Data Structures</span>
+            <span class="timeline-skill-tag">Problem Solving</span>
+            <span class="timeline-skill-tag">LeetCode</span>
+          </div>
+        </div>
+
+        <!-- Emerging Tech -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <span class="timeline-label">Emerging Tech Exploration</span>
+          <h3 class="timeline-title">AI, Automation & Modern Tools</h3>
+          <p class="timeline-subtitle">Self-Paced Learning</p>
+          <p class="timeline-description">
+            Exploring AI tools and automation workflows while staying updated with modern development trends and their practical applications.
+          </p>
+          <div class="timeline-skills">
+            <span class="timeline-skill-tag">AI Tools</span>
+            <span class="timeline-skill-tag">Automation</span>
+            <span class="timeline-skill-tag">n8n</span>
+            <span class="timeline-skill-tag">Modern Web</span>
+          </div>
+        </div>
+
+        <!-- Certifications & Continuous Learning -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <span class="timeline-label">Certifications & Continuous Learning</span>
+          <h3 class="timeline-title">Professional Upskilling</h3>
+          <p class="timeline-description">
+            Earning certifications in Python, Machine Learning, Data Science, and Business Analysis while participating in hackathons and tech events.
+          </p>
+          <div class="timeline-skills">
+            <span class="timeline-skill-tag">Python</span>
+            <span class="timeline-skill-tag">Machine Learning</span>
+            <span class="timeline-skill-tag">Data Science</span>
+            <span class="timeline-skill-tag">Business Analysis</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <div class="section-divider"></div>
+
+
+  <!-- ========== STARTUPS & ORGANIZATIONS ========== -->
+  <section class="section" id="startups">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">Startups & Organizations</p>
+        <h2 class="section-title">Building & contributing</h2>
+      </div>
+
+      <div class="startups-grid">
+
+        <!-- Startup & Product Exploration -->
+        <div class="startup-card reveal">
+          <div class="startup-card-header">
+            <span class="startup-role member">Explorer</span>
+            <span class="startup-period">Ongoing</span>
+          </div>
+          <h3>Startup & Product Exploration</h3>
+          <p class="startup-org">Independent Learning</p>
+          <p>Exploring product thinking, user experience, and scalable tech solutions. Working on digital ideas focused on real-world usability and impact.</p>
+          <div class="startup-skills">
+            <span class="timeline-skill-tag">Product Thinking</span>
+            <span class="timeline-skill-tag">Business Strategy</span>
+            <span class="timeline-skill-tag">Startup Ideation</span>
+            <span class="timeline-skill-tag">User Experience</span>
+          </div>
+        </div>
+
+        <!-- Sami Cleaner -->
+        <div class="startup-card reveal reveal-delay-1">
+          <div class="startup-card-header">
+            <span class="startup-role founder">Founder</span>
+            <span class="startup-period">2022 – 2023</span>
+          </div>
+          <h3>Sami Cleaner</h3>
+          <p class="startup-org">Self-Employed</p>
+          <p>Started a product-based cleaning brand during school, handling production, branding, and local sales. Sold 19,000+ units and generated ₹7L+ revenue while learning real-world business operations.</p>
+          <div class="startup-skills">
+            <span class="timeline-skill-tag">Entrepreneurship</span>
+            <span class="timeline-skill-tag">Sales</span>
+            <span class="timeline-skill-tag">Brand Building</span>
+          </div>
+        </div>
+
+        <!-- ARC Esports -->
+        <div class="startup-card reveal reveal-delay-2">
+          <div class="startup-card-header">
+            <span class="startup-role founder">Founder</span>
+            <span class="startup-period">2024 – Present</span>
+          </div>
+          <h3>ARC Esports</h3>
+          <p>Building platform for esports fans that centralizes tournament standings, schedules, and gaming updates. Designed for underdog eSports enthusiasts who want to compete in bigger national and international tournaments.</p>
+          <div class="startup-skills">
+            <span class="timeline-skill-tag">Development</span>
+            <span class="timeline-skill-tag">UI/UX</span>
+            <span class="timeline-skill-tag">Esports</span>
+          </div>
+        </div>
+
+        <!-- RoVisits -->
+        <div class="startup-card reveal reveal-delay-3">
+          <div class="startup-card-header">
+            <span class="startup-role founder">Founder</span>
+            <span class="startup-period">2025 – Present</span>
+          </div>
+          <h3>RoVisits</h3>
+          <p>Working on a loyalty solution helping local businesses turn first-time visitors into repeat customers through simple digital stamp-card systems.</p>
+          <div class="startup-skills">
+            <span class="timeline-skill-tag">Startup Building</span>
+            <span class="timeline-skill-tag">Product Thinking</span>
+            <span class="timeline-skill-tag">Customer Retention</span>
+          </div>
+        </div>
+
+        <!-- GDG On Campus -->
+        <div class="startup-card reveal">
+          <div class="startup-card-header">
+            <span class="startup-role member">Member</span>
+            <span class="startup-period">Nov 2025 – Present</span>
+          </div>
+          <h3>GDG On Campus</h3>
+          <p class="startup-org">Bennett University</p>
+          <p>Active member of a Google-supported student tech community. Participate in workshops, hackathons, and tech talks while engaging in hands-on learning and peer collaboration on modern development tools.</p>
+          <div class="startup-skills">
+            <span class="timeline-skill-tag">Community</span>
+            <span class="timeline-skill-tag">Workshops</span>
+            <span class="timeline-skill-tag">Google</span>
+            <span class="timeline-skill-tag">Tech</span>
+          </div>
+        </div>
+
+        <!-- Coding Club ATC -->
+        <div class="startup-card reveal reveal-delay-1">
+          <div class="startup-card-header">
+            <span class="startup-role member">Member</span>
+            <span class="startup-period">2025 – Present</span>
+          </div>
+          <h3>Coding Club ATC</h3>
+          <p>Part of a student coding community focused on problem-solving and programming fundamentals. Engage in coding sessions, technical discussions, and peer-driven learning activities.</p>
+          <div class="startup-skills">
+            <span class="timeline-skill-tag">Coding</span>
+            <span class="timeline-skill-tag">Problem Solving</span>
+            <span class="timeline-skill-tag">Peer Learning</span>
+          </div>
+        </div>
+
+        <!-- Global AI Summit 2025 -->
+        <div class="startup-card reveal reveal-delay-2">
+          <div class="startup-card-header">
+            <span class="startup-role volunteer">Volunteer</span>
+            <span class="startup-period">Nov 2025</span>
+          </div>
+          <h3>Global AI Summit 2025</h3>
+          <p class="startup-org">Bennett University</p>
+          <p>Volunteered at a large-scale AI conference, supporting event coordination, session logistics, and attendee management. Collaborated with organizing teams to ensure smooth execution of technical sessions and workshops.</p>
+          <div class="startup-skills">
+            <span class="timeline-skill-tag">Event Management</span>
+            <span class="timeline-skill-tag">AI Conference</span>
+            <span class="timeline-skill-tag">Teamwork</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <div class="section-divider"></div>
+
+
+  <!-- ========== BEYOND CODE ========== -->
+  <section class="section" id="beyond">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">Beyond Code</p>
+        <h2 class="section-title">What drives me outside tech</h2>
+      </div>
+
+      <div class="beyond-grid">
+        <div class="beyond-card reveal">
+          <span class="beyond-icon">🏋️</span>
+          <h3>Fitness & Gym</h3>
+          <p>Discipline, consistency, and pushing limits</p>
+        </div>
+
+        <div class="beyond-card reveal reveal-delay-1">
+          <span class="beyond-icon">🏸</span>
+          <h3>Badminton Athlete</h3>
+          <p>Focus, agility, and competitive spirit</p>
+        </div>
+
+        <div class="beyond-card reveal reveal-delay-2">
+          <span class="beyond-icon">♟️</span>
+          <h3>Chess</h3>
+          <p>Strategic thinking and patience</p>
+        </div>
+
+        <div class="beyond-card reveal reveal-delay-3">
+          <span class="beyond-icon">🧩</span>
+          <h3>Problem Solving</h3>
+          <p>I genuinely enjoy tackling complex challenges</p>
+        </div>
+
+        <div class="beyond-card reveal reveal-delay-4">
+          <span class="beyond-icon">💭</span>
+          <h3>Brainstorming</h3>
+          <p>I love generating and refining new ideas</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="section-divider"></div>
+
+
+  <!-- ========== CONTACT SECTION ========== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">Contact</p>
+        <h2 class="section-title">Let's connect</h2>
+      </div>
+
+      <div class="contact-content">
+        <div class="contact-info reveal">
+          <h3>Get in touch</h3>
+          <p>Feel free to reach out for collaborations, opportunities, or just a friendly conversation about tech, startups, and the future of AI.</p>
+
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-item-icon">✉️</div>
+              <a href="mailto:rishukumarici@gmail.com">rishukumarici@gmail.com</a>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">📞</div>
+              <span>(+91) 7667435916</span>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">📍</div>
+              <span>Greater Noida, UP, India</span>
+            </div>
+          </div>
+
+          <div class="contact-socials">
+            <!-- GitHub -->
+            <a href="https://github.com/theSam996" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/samar-barnwal-1681ac/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/samarlism/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg>
+            </a>
+
+            <!-- Email -->
+            <a href="mailto:rishukumarici@gmail.com" class="social-link" aria-label="Email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form-wrapper reveal reveal-delay-1">
+          <form class="contact-form" id="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contact-name">Name</label>
+                <input type="text" id="contact-name" name="name" placeholder="Your name" required>
+              </div>
+              <div class="form-group">
+                <label for="contact-email">Email</label>
+                <input type="email" id="contact-email" name="email" placeholder="your@email.com" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="contact-subject">Subject</label>
+              <input type="text" id="contact-subject" name="subject" placeholder="What's this about?">
+            </div>
+            <div class="form-group">
+              <label for="contact-message">Message</label>
+              <textarea id="contact-message" name="message" placeholder="Your message..." rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" id="contact-submit" style="width: 100%; justify-content: center;">
+              Send Message
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+            <div class="form-success" id="form-success">
+              ✓ Message sent successfully! I'll get back to you soon.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-text">© Samar Kumar. All Rights Reserved.</p>
+      <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+      </button>
+    </div>
+  </footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
