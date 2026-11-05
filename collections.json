@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "title": "Excel and Copilot Fundamentals",
+    "issuer": "Microsoft",
+    "date": "September 2026",
+    "category": "PRODUCTIVITY",
+    "tags": ["Microsoft Excel", "Copilot"],
+    "image": "collections/ExcelCopilotCertificate.jpg",
+    "credential": "https://coursera.org/verify/LT0KLUGEYIN8"
+  },
+  {
+    "id": 2,
+    "title": "Generative AI: Prompt Engineering Basics",
+    "issuer": "IBM",
+    "date": "September 2026",
+    "category": "GENERATIVE AI",
+    "tags": ["Prompt Engineering", "Generative AI"],
+    "image": "collections/PromptEngineeringCertificate.jpg",
+    "credential": "https://coursera.org/verify/AXXJ7B0YMVHK"
+  },
+  {
+    "id": 3,
+    "title": "Data Analysis with Python",
+    "issuer": "IBM",
+    "date": "September 2026",
+    "category": "DATA SCIENCE",
+    "tags": ["Python", "Data Analysis"],
+    "image": "collections/DataPythonIBMCertificate.jpg",
+    "credential": "https://coursera.org/verify/6N8HJ3ZE5TOX"
+  },
+  {
+    "id": 4,
+    "title": "SQL Foundations",
+    "issuer": "Microsoft",
+    "date": "September 2026",
+    "category": "DATABASES",
+    "tags": ["SQL", "Database Management"],
+    "image": "collections/SQLFoundationsCertificate.jpg",
+    "credential": "https://coursera.org/verify/7YMMAXJGK0ND"
+  },
+  {
+    "id": 5,
+    "title": "Introduction to Artificial Intelligence (AI)",
+    "issuer": "IBM",
+    "date": "September 2026",
+    "category": "ARTIFICIAL INTELLIGENCE",
+    "tags": ["AI Fundamentals", "Machine Learning"],
+    "image": "collections/IntroductionToALCertificate(1).jpg",
+    "credential": "https://coursera.org/verify/TA07KTV1JM2N"
+  },
+  {
+    "id": 6,
+    "title": "Introduction to Data Analysis Using Python",
+    "issuer": "Google",
+    "date": "September 2026",
+    "category": "DATA ANALYTICS",
+    "tags": ["Python", "Data Analysis"],
+    "image": "collections/DataAnalysisPythonCertificate.jpg",
+    "credential": "https://coursera.org/verify/NUPW2GFPEME9"
+  },
+  {
+    "id": 7,
+    "title": "What is Data Science?",
+    "issuer": "IBM",
+    "date": "September 2026",
+    "category": "DATA SCIENCE",
+    "tags": ["Data Science", "Data Literacy"],
+    "image": "collections/DS_IBM Certificate.jpg",
+    "credential": "https://coursera.org/verify/CZUIZBLSOMT3"
+  },
+  {
+    "id": 8,
+    "title": "Foundations: Data, Data, Everywhere",
+    "issuer": "Google",
+    "date": "September 2026",
+    "category": "DATA ANALYTICS",
+    "tags": ["Data Analytics", "Data-Driven Decision Making"],
+    "image": "collections/FoundationsDataCertificate(1).jpg",
+    "credential": "https://coursera.org/verify/3RF0U5O7UVSP"
+  },
+  {
+    "id": 9,
+    "title": "Engineering Reports and Research Publishing (2025 CSET202)",
+    "issuer": "Bennett University",
+    "date": "September 2026",
+    "category": "RESEARCH & DEVELOPMENT",
+    "tags": ["Technical Writing", "Research Publishing"],
+    "image": "collections/EngineeringReportsCertificate.jpg",
+    "credential": "https://coursera.org/verify/IXG0PYTF9UYL"
+  },
+  {
+    "id": 10,
+    "title": "Python Skill Up",
+    "issuer": "GeeksforGeeks",
+    "date": "Dec 2025",
+    "category": "PROGRAMMING",
+    "tags": ["Python", "Databases", "Standard Libraries"],
+    "image": "collections/GFG_Python%20copy.jpg",
+    "credential": "https://www.geeksforgeeks.org/certificate/47b6b104c04e60f9dab21a7d75ab1933?utm_source=socials&utm_medium=cc_link"
+  }
+]

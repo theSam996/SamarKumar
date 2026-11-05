@@ -106,94 +106,94 @@ document.addEventListener('DOMContentLoaded', () => {
   // ========== CERTIFICATIONS SHOWCASE SWITCHER ==========
   const certificates = [
     {
+      title: "Excel and Copilot Fundamentals",
+      category: "PRODUCTIVITY",
+      issuer: "Microsoft",
+      date: "September 2026",
+      image: "collections/ExcelCopilotCertificate.jpg",
+      tags: ["Microsoft Excel", "Copilot"],
+      credential: "https://coursera.org/verify/LT0KLUGEYIN8"
+    },
+    {
+      title: "Generative AI: Prompt Engineering Basics",
+      category: "GENERATIVE AI",
+      issuer: "IBM",
+      date: "September 2026",
+      image: "collections/PromptEngineeringCertificate.jpg",
+      tags: ["Prompt Engineering", "Generative AI"],
+      credential: "https://coursera.org/verify/AXXJ7B0YMVHK"
+    },
+    {
+      title: "Data Analysis with Python",
+      category: "DATA SCIENCE",
+      issuer: "IBM",
+      date: "September 2026",
+      image: "collections/DataPythonIBMCertificate.jpg",
+      tags: ["Python", "Data Analysis"],
+      credential: "https://coursera.org/verify/6N8HJ3ZE5TOX"
+    },
+    {
+      title: "SQL Foundations",
+      category: "DATABASES",
+      issuer: "Microsoft",
+      date: "September 2026",
+      image: "collections/SQLFoundationsCertificate.jpg",
+      tags: ["SQL", "Database Management"],
+      credential: "https://coursera.org/verify/7YMMAXJGK0ND"
+    },
+    {
+      title: "Introduction to Artificial Intelligence (AI)",
+      category: "ARTIFICIAL INTELLIGENCE",
+      issuer: "IBM",
+      date: "September 2026",
+      image: "collections/IntroductionToALCertificate(1).jpg",
+      tags: ["AI Fundamentals", "Machine Learning"],
+      credential: "https://coursera.org/verify/TA07KTV1JM2N"
+    },
+    {
+      title: "Introduction to Data Analysis Using Python",
+      category: "DATA ANALYTICS",
+      issuer: "Google",
+      date: "September 2026",
+      image: "collections/DataAnalysisPythonCertificate.jpg",
+      tags: ["Python", "Data Analysis"],
+      credential: "https://coursera.org/verify/NUPW2GFPEME9"
+    },
+    {
+      title: "What is Data Science?",
+      category: "DATA SCIENCE",
+      issuer: "IBM",
+      date: "September 2026",
+      image: "collections/DS_IBM%20Certificate.jpg",
+      tags: ["Data Science", "Data Literacy"],
+      credential: "https://coursera.org/verify/CZUIZBLSOMT3"
+    },
+    {
+      title: "Foundations: Data, Data, Everywhere",
+      category: "DATA ANALYTICS",
+      issuer: "Google",
+      date: "September 2026",
+      image: "collections/FoundationsDataCertificate(1).jpg",
+      tags: ["Data Analytics", "Data-Driven Decision Making"],
+      credential: "https://coursera.org/verify/3RF0U5O7UVSP"
+    },
+    {
+      title: "Engineering Reports and Research Publishing (2025 CSET202)",
+      category: "RESEARCH & DEVELOPMENT",
+      issuer: "Bennett University",
+      date: "September 2026",
+      image: "collections/EngineeringReportsCertificate.jpg",
+      tags: ["Technical Writing", "Research Publishing"],
+      credential: "https://coursera.org/verify/IXG0PYTF9UYL"
+    },
+    {
       title: "Python Skill Up",
-      category: "Programming",
+      category: "PROGRAMMING",
       issuer: "GeeksforGeeks",
       date: "Dec 2025",
       image: "collections/GFG_Python%20copy.jpg",
       tags: ["Python", "Databases", "Standard Libraries"],
       credential: "https://www.geeksforgeeks.org/certificate/47b6b104c04e60f9dab21a7d75ab1933?utm_source=socials&utm_medium=cc_link"
-    },
-    {
-      title: "Data Science Course – Mastering the Fundamentals",
-      category: "Data Science",
-      issuer: "Scaler",
-      date: "Dec 2025",
-      image: "collections/DS_Scalar%20copy.png",
-      tags: ["Data Science", "Python for Analysis"],
-      credential: "https://moonshot.scaler.com/s/sl/AlGc5hCulj?_gl=1*1lrn2qg*_gcl_au*MTU5MDQ3OTI2MC4xNzYyOTAwMDk1*FPAU*MTU5MDQ3OTI2MC4xNzYyOTAwMDk1*_ga*MTE0MTI5ODk4OS4xNzYyOTAwMDk1*_ga_53S71ZZG1X*czE3NjYxNjUzNzIkbzQkZzEkdDE3NjYxNjY0MzkkajYwJGwwJGgxMzY1NjY5OTU1"
-    },
-    {
-      title: "Code Slayer 2K25 – NIT Delhi Participation",
-      category: "Hackathons",
-      issuer: "Unstop",
-      date: "Oct 2025",
-      image: "collections/NITDelhiHackathon_page-0001%20copy.jpg",
-      tags: ["Competitive Coding", "Problem Solving"],
-      credential: "https://unstop.com/certificate-preview/a5a176fd-89f2-4fc2-bd0b-015067fb5066"
-    },
-    {
-      title: "Hype Series – The Ultimate Hackathon Playbook",
-      category: "Hackathons",
-      issuer: "Growbinar",
-      date: "Aug 2025",
-      image: "collections/HypeCertificate%20copy%202.jpg",
-      tags: ["Hackathon Strategy", "Innovation"],
-      credential: ""
-    },
-    {
-      title: "Machine Learning with MATLAB",
-      category: "AI/ML",
-      issuer: "MathWorks",
-      date: "Sep 2025",
-      image: "collections/MATLAB%20Certificate%20copy.jpg",
-      tags: ["Machine Learning", "MATLAB"],
-      credential: "https://matlabacademy.mathworks.com/progress/share/certificate.html?id=aa840531-fd97-4eda-9630-efb9c796a3e2&"
-    },
-    {
-      title: "Business Analysis Basics",
-      category: "Business",
-      issuer: "Simplilearn",
-      date: "Dec 2025",
-      image: "collections/BA_basics%20copy.jpg",
-      tags: ["Business Strategy", "Communication"],
-      credential: "https://simpli-web.app.link/e/Xh6A32KJiZb"
-    },
-    {
-      title: "Introduction to Programming Using Python",
-      category: "Programming",
-      issuer: "Infosys Springboard",
-      date: "Oct 2025",
-      image: "collections/Infosys%20Python%20Certificate_page-0001%20copy.jpg",
-      tags: ["Python Programming", "Fundamentals"],
-      credential: "https://verify.onwingspan.com"
-    },
-    {
-      title: "Beyond the Browser: Angular Meets Generative AI",
-      category: "Web + AI",
-      issuer: "D4 Community",
-      date: "Jan 2026",
-      image: "collections/Samar%20Kumar%20-%20Participation%20Certificate_page-0001%20copy.jpg",
-      tags: ["Angular", "Generative AI"],
-      credential: ""
-    },
-    {
-      title: "Kotler's Maniac of B.A.S.H 8.0 – IIT BHU",
-      category: "Business Strategy",
-      issuer: "Unstop",
-      date: "Jan 2026",
-      image: "collections/IITBhuCertificate_page-0001%20copy.jpg",
-      tags: ["Case Solving", "Strategic Thinking"],
-      credential: "https://unstop.com/certificate-preview/9fbc1099-8402-451d-adb3-3cbe70b539f0"
-    },
-    {
-      title: "Basics Tutorial on Business",
-      category: "Business",
-      issuer: "Simplilearn",
-      date: "Dec 2025",
-      image: "collections/BasicsOnBusiness%20copy.jpg",
-      tags: ["Business Laws", "SWOT", "Planning"],
-      credential: "https://simpli-web.app.link/e/i3MK4QR7iZb"
     }
   ];
 
